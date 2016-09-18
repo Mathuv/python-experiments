@@ -1,5 +1,6 @@
 import unittest
-from primes import  is_prime
+from primes import *
+
 
 class PrimesTestCase(unittest.TestCase):
     """Tests for 'primes.py'."""
@@ -7,6 +8,18 @@ class PrimesTestCase(unittest.TestCase):
     def test_is_five_prime(self):
         """Is five successfully determined to be prime?"""
         self.assertTrue(is_prime(5))
+
+    def test_addition_integers(self):
+        """Is integer addition 2 + 3 = 5?."""
+        self.assertTrue(my_addition_function(2, 3))
+
+    def test_addition_floats(self):
+        """Is float addition 2.0 + 3.0 = 5?."""
+        self.assertTrue(my_addition_function(2.0, 3.0))
+
+    def test_addition_integer_string(self):
+        """What happens when string is given as an input for addition?."""
+        self.assertTrue(my_addition_function(2, 'refrigirator'))
 
 
 if __name__ == '__main__':

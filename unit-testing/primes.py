@@ -14,3 +14,7 @@ def print_next_prime(number):
         index += 1
         if is_prime(index):
             print(index)
+
+
+def my_addition_function(number1, number2):
+    return number1 + number2
