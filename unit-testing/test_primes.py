@@ -10,4 +10,7 @@ class PrimesTestCase(unittest.TestCase):
 
 
 if __name__ == '__main__':
+    """Using Python's built-in unittest framework, any member function whose name begins with test
+     in a class deriving from unittest.TestCase will be run, and its assertions checked,
+     when unittest.main() is called"""
     unittest.main()
