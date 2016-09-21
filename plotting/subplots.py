@@ -1,12 +1,13 @@
 """
 The figure() command here is optional because figure(1) will be created by default,
-just as a subplot(111) will be created by default if you don’t manually specify any axes.
+just as a subplot(111) will be created by default if you don't manually specify any axes.
 The subplot() command specifies numrows, numcols, fignum where fignum ranges from 1 to numrows*numcols.
 """
 
 
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 def f(t):
     return np.exp(-t) * np.cos(2*np.pi*t)
