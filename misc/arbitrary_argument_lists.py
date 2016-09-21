@@ -5,6 +5,10 @@ def print_everything(*args):
 
 print_everything('apple', 'banana', 'cabbage')
 
+# output
+# 0.apple
+# 1.banana
+# 2.cabbage
 
 # Use ** to handle names arguments that you have not defined in advance
 def table_things(**kwargs):
@@ -14,6 +18,9 @@ def table_things(**kwargs):
 
 table_things(apple='fruit', cabbage='vegetable')
 
+# output
+# cabbage = vegetable
+# apple = fruit
 
 # arbitrary argument lists can be used together with names arguments
 def table_things2(titlestring, **kwargs):
@@ -23,6 +30,11 @@ def table_things2(titlestring, **kwargs):
 
 table_things2('Healthy stuffs', apple='fruit', cabbage='vegetable')
 
+# output
+# Healthy stuffs
+# cabbage = vegetable
+# apple = fruit
+
 
 # * and ** syntax can be used when calling functions
 def print_three_things(a, b, c):
@@ -31,3 +43,6 @@ def print_three_things(a, b, c):
 my_list = ['aadvark', 'baboon', 'cat']
 print '\n'
 print_three_things(*my_list)
+
+# output
+# a = aadvark, b = baboon, c = cat
