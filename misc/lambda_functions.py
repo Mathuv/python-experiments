@@ -34,3 +34,27 @@ print i(3, 5, 5)
 # OUTPUT
 # 15
 # 75
+
+
+# Returning a function from another function
+def transform(n):
+    return lambda x: x + n
+
+f2 = transform(3)
+print f2(4)
+
+# OUTPUT
+# 7
+# Combining elements of an iterable sequence with reduce()
+x = reduce(lambda a, b: '{}, {}'.format(a, b), [1, 2, 3, 4, 5, 6, 7, 8, 9])
+print x
+
+# OUTPUT
+# 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+# Sorting by an alternate key
+rel = sorted([1, 2, 3, 4, 5, 6, 7, 8, 9], key=lambda x: abs(5-x))
+print rel
+
+# OUTPUT
+# [5, 4, 6, 3, 7, 2, 8, 1, 9]
