@@ -10,7 +10,7 @@ print_everything('apple', 'banana', 'cabbage')
 # 1.banana
 # 2.cabbage
 
-# Use ** to handle names arguments that you have not defined in advance
+# Use ** to handle named arguments that you have not defined in advance
 def table_things(**kwargs):
     print('\n')
     for name, value in kwargs.items():
